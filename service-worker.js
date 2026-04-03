@@ -3,11 +3,19 @@ const CACHE_NAME = "sochou-salon-v1";
 const urlsToCache = [
   "/",
   "/index.html",
+  "/services.html",
+  "/galerie.html",
+  "/contact.html",
+  "/apropos.html",
   "/style.css",
   "/manifest.json",
-  "/images/",
+
+  // Icônes
   "/icons/icon-192.png",
-  "/icons/icon-512.png"
+  "/icons/icon-512.png",
+
+  // Images importantes (exemples)
+  "/ressources/images/arriere-plan2.png"
 ];
 
 // INSTALLATION
@@ -21,7 +29,7 @@ self.addEventListener("install", (event) => {
   );
 });
 
-// ACTIVATION
+// ACTIVATION (supprime anciens caches)
 self.addEventListener("activate", (event) => {
   console.log("Service Worker activé");
 
@@ -38,7 +46,7 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// INTERCEPTION DES REQUÊTES
+// FETCH (offline)
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
