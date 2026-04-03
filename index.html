@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - SOCHOU SALON</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(to right, black, gray);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            width: 20%;
+            height: 35%;
+            animation: fadeIn 3s infinite ease-in-out;
+        }
+
+        h1 {
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        p {
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: greenyellow;
+            cursor: pointer;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        button:hover {
+            background-color: yellowgreen;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("service-worker.js")
+      .then(() => console.log("Service Worker enregistré"))
+      .catch((error) => console.log("Erreur:", error));
+  });
+}
+</script>
+<body>
+
+    <img src="ressources/images/logo.png" alt="logo du site">
+    <h1>💇‍♀️ SOCHOU HAIR BEAUTY SALON</h1>
+    <p>Bienvenue dans votre univers de beauté</p>
+
+    <a href="accueil.html" target="_blank"><button> Commencer </button></a>
+
+</body>
+</html>
