@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#000000">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SOCHOU SALON</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><!--lien des icones-->
+    </head>
+
+    <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("service-worker.js")
+      .then(() => console.log("Service Worker enregistré"))
+      .catch((error) => console.log("Erreur:", error));
+  });
+}
+</script>
+    <body>
+        <nav><!--menu de naviguation-->
+            <a href="accueil.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="apropos.html">A propos</a>
+        </nav>
+        
+        <section class="Bienvenue">
+            <h1>SOCHOU HAIR BEAUTY SALON</h1>
+        <h2>Laissez votre beauté prendre la parole</h2>
+        </section>
+
+        <p>
+            <mark>SOCHOU HAIR BEAUTY SALON, Spécialiste de la coiffure, des soins capillaires et de l’esthétique à Lomé</mark><br> Nous vous offrons des prestations complètes en coiffure, soins capillaires, manucure et pédicure, ainsi qu’un espace de vente dédié aux mèches, perruques, produits de beauté et tenues en crochet. Tout est réuni pour sublimer votre beauté en un seul lieu.
+            <a href="services.html"><button>Découvrez nos services</button></a>
+            <a href="https://wa.me/22896100360?text=Bonjour%20SOCHOU%20SALON%0AJe suis%20intéressé(e)%20par%20vos%20services%20et%20j'aimerais%20bien%20prendre%20un%20rendez-vous.%0A%0AVoici%20mes%20informations%20:%0APrénom%20:%0AService%20voulu%20:%0ADate%20souhaitée%20:%0AHeure%20souhaitée%20:%0A%0AMerci%20de%20me%20confirmer%20votre%20disponibilité."><button>prendre un rendez-vous</button></a><!--bouton whatsapp avec message de rendez-vous-->
+        </p><hr>
+        <h2>Nos services</h2>
+        <img src="ressources/images/services.png" alt="Nos prestations"><hr>
+
+        <section class="presentation">
+            <div class="para1">
+                <p>
+                    <h3>POURQUOI NOUS CHOISIR ?</h3>
+                    <li>  Expertise et professionnalisme</li>
+                    <li>  Services personnalisés</li>
+                    <li>  Produits de qualité </li>
+                    <li>  Accueil chaleureux</li>
+                    <li>  Excellent rapport qualité/prix</li>
+                </p>
+            </div>
+            <div class="para2">
+                <p>
+                    <h3>NOS INFORMATIONS</h3>
+                    <li>  Adresse : Totsi - Lomé - Togo</li>
+                    <li>  Jours d'ouverture : de Lundi à Samedi</li>
+                    <li>  Heures d'ouverture : de 09h à 21h</li>
+                </p>
+            </div>
+        </section>
+
+        
+        <footer><!--Pied de page-->
+            <p>Contactez-nous dès maintenant pour sublimer votre beauté et profiter de nos services professionnels à des prix reduits.</p>
+            <a href="https://wa.me/96100360" class="whatsapp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+
+            <a href="tel:+22896100360" class="telephone">
+            <i class="fa-solid fa-phone"></i> Appeler</a>
+
+            <a href="sms:+22896100360" class="sms">
+            <i class="fa-solid fa-comment"></i> Envoyer un SMS</a>
+            
+            <a href="mailto:sochouadk@gmail.com" class="email">
+            <i class="fa-solid fa-envelope"></i> Envoyer un E-mail</a>
+
+
+            <p> © 2026 SOCHOU SALON - Tous droits reservés</p>
+        </footer>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
